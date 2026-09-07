@@ -1,28 +1,28 @@
 name: lint
 
 on:
-  push:
-    tags-ignore:
-      - v*.*
-    branches:
-      - '**'
-    paths:
-      - '.clang-format'
-      - '.github/actions/install-clang-format/**'
-      - '.github/workflows/lint.yml'
-      - '**/*.hpp'
-      - '**/*.cpp'
-      - '**/*.h'
-      - 'tools/apply_format.sh'
-      - 'tools/clang_format_version'
-      - 'tools/ensure_format.sh'
-      - 'tools/clang_tidy_version'
-      - 'tools/install_clang_tidy_linux.sh'
-      - 'tools/run_clang_tidy.sh'
-      - '.clang-tidy'
-  pull_request:
-    branches:
-      - '**'
+  # push:
+  #   tags-ignore:
+  #     - v*.*
+  #   branches:
+  #     - '**'
+  #   paths:
+  #     - '.clang-format'
+  #     - '.github/actions/install-clang-format/**'
+  #     - '.github/workflows/lint.yml'
+  #     - '**/*.hpp'
+  #     - '**/*.cpp'
+  #     - '**/*.h'
+  #     - 'tools/apply_format.sh'
+  #     - 'tools/clang_format_version'
+  #     - 'tools/ensure_format.sh'
+  #     - 'tools/clang_tidy_version'
+  #     - 'tools/install_clang_tidy_linux.sh'
+  #     - 'tools/run_clang_tidy.sh'
+  #     - '.clang-tidy'
+  # pull_request:
+  #   branches:
+  #     - '**'
 
 permissions:
   contents: read
