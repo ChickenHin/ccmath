@@ -1,14 +1,7 @@
 name: ci-macos
 
 on:
-  push:
-    tags-ignore:
-      - v*.*
-    branches:
-      - '**'
-  pull_request:
-    branches:
-      - '**'
+  workflow_dispatch: 
 
 permissions:
   contents: read
